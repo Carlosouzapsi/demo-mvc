@@ -21,7 +21,7 @@ public class DepartamentoServiceImpl implements DepartamentoService {
 		dao.save(departamento);
 	}
 	
-	@Transactional(readOnly = true)
+	@Transactional(readOnly = false)
 	@Override
 	public void editar(Departamento departamento) {
 		dao.update(departamento);
